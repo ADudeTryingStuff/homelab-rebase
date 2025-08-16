@@ -9,3 +9,5 @@ passwd:
         - wheel
         - docker
       shell: /bin/bash
+      home_dir: /home/minion
+      uid: 2000
