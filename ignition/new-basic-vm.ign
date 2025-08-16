@@ -1,0 +1,20 @@
+{
+  "ignition": {
+    "version": "3.5.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "wheel",
+          "docker"
+        ],
+        "name": "minion",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDj3ycNuGbsymXVKuMFad8xPwzeqFi6SRUh0eMjklnoq"
+        ],
+        "shell": "/bin/bash"
+      }
+    ]
+  }
+}

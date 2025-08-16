@@ -1,0 +1,11 @@
+variant: fcos
+version: 1.6.0
+passwd:
+  users:
+    - name: minion
+      ssh_authorized_keys:
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDj3ycNuGbsymXVKuMFad8xPwzeqFi6SRUh0eMjklnoq
+      groups:
+        - wheel
+        - docker
+      shell: /bin/bash
