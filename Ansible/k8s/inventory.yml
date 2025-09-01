@@ -1,0 +1,27 @@
+nestlings:
+  children:
+    k8s_worker_nodes:
+    k8s_control_plane:
+
+
+k8s_control_plane:
+  hosts:
+    k8s-con-1:
+      ansible_host: 192.168.86.204
+    k8s-con-2:
+      ansible_host: 192.168.86.205
+    k8s-con-3:
+      ansible_host: 192.168.86.206
+  vars:
+    ansible_user: egg
+
+k8s_worker_nodes:
+  hosts:
+    k8s-wor-1:
+      ansible_host: 192.168.86.207
+    k8s-wor-2:
+      ansible_host: 192.168.86.208
+    k8s-wor-3:
+      ansible_host: 192.168.86.209
+  vars:
+    ansible_user: egg

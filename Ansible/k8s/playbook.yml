@@ -1,0 +1,22 @@
+- name: Install base packages
+  hosts: nestlings
+  become: true
+  tasks:
+    - name: Install extra repositories
+      ansible.builtin.dnf:
+        name:
+          - epel-release
+        state: present
+    - name: Update dnf cache
+      ansible.builtin.dnf:
+        update_cache: true
+    - name: Install base packages
+      ansible.builtin.dnf:
+        name:
+          - curl
+          - wget
+          - git
+          - neovim
+          - btop
+          - fastfetch
+        state: present
